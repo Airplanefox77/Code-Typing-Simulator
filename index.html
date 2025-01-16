@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Typing Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="command-prompt">
+        <div class="line-numbers" id="line-numbers"></div>
+        <div id="code-area">
+            <textarea id="input" autofocus></textarea>
+            <div id="output"></div>
+        </div>
+    </div>
+    <div id="status-container">
+        <div id="auto-coders-display">Auto Coders: 0</div>
+        <div id="earnings-display">Earnings: $0</div>
+    </div>
+    <div id="shop-button-container">
+        <button id="shop">Shop</button>
+        <button id="settings">Settings</button>
+    </div>
+    <div id="menu">
+        <button id="buy-auto-coder">Buy Auto Coder - $100</button>
+        <div id="auto-coders-count">Auto Coders: 0</div>
+        <button id="buy-color-change">Buy Color Change - $1,500</button>
+        <button id="buy-rainbow-text">Buy Animated Rainbow Highlights - $1,000,000</button>
+    </div>
+    <div id="settings-menu" style="display: none;">
+        <button id="reset-game">Reset Game</button>
+    </div>
+    <div id="color-menu" style="display: none;">
+        <label>Highlight Color: <input type="color" id="text-color-picker"></label>
+        <button id="apply-colors">Apply Colors</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
