@@ -68,21 +68,22 @@ textarea {
     color: inherit;
 }
 
-/* Minimalistic Button Styles */
+/* Button Styles with Customizable Border and Text Color */
 button {
-    background-color: #0f0;
-    color: #000;
-    border: none;
+    background-color: #000; /* Black background */
+    color: #0f0; /* Initial text and border color */
+    border: 2px solid #0f0;
     padding: 10px;
     cursor: pointer;
     font-size: 14px;
-    transition: background-color 0.3s, border-color 0.3s;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
     margin: 10px auto; /* Center the buttons */
     display: block; /* Center the buttons */
 }
 
 button:hover {
-    background-color: #1f1;
+    background-color: #111;
+    border-color: #0f0; /* Maintain border color on hover */
 }
 
 #shop-button-container {
@@ -154,7 +155,7 @@ input[type="color"] {
     background-color: #111;
     color: #0f0;
     padding: 20px;
-    border: 1px solid #0f0;
+    border: 2px solid #0f0;
     animation: popup 0.5s;
     z-index: 300; /* Ensure popup is above other elements */
 }

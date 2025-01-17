@@ -27,7 +27,7 @@ const charMap = {
     'a': 'let',
     'b': 'const',
     'c': 'function',
-    'd': 'spercalifragilisticexpialidocious',
+    'd': 'console.log',
     'e': 'var',
     'f': 'if',
     'g': 'else',
@@ -117,7 +117,6 @@ window.onload = function() {
     updateEarningsDisplay();
     startAutoCoders(); // Start auto coders
 };
-
 function updateEarningsDisplay() {
     earningsDisplay.textContent = `Earnings: $${earnings}`;
     autoCodersDisplay.textContent = `Auto Coders: ${autoCoderCount}`;
@@ -198,6 +197,12 @@ function updateTextColor(color) {
             el.style.color = color;
             el.style.borderColor = color;
         }
+
+        // Update button styles
+        if (el.tagName === 'BUTTON') {
+            el.style.borderColor = color;
+            el.style.color = color;
+        }
     });
 
     // Update scrollbar styles
@@ -207,7 +212,8 @@ function updateTextColor(color) {
             background: ${color};
         }
         button:hover {
-            background-color: ${shadeColor(color, 20)};
+            background-color: #111;
+            border-color: ${color};
         }
         #popup {
             color: ${color};
@@ -269,3 +275,4 @@ function loadProgress() {
         startAutoCoders(); // Start auto coders after loading progress
     }
 }
+
